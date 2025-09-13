@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ligando com o css-->
+     <link rel="stylesheet" href="style.css">
+    <title>sistema de clinica-login</title>
+</head>
+
+<body>
+    <div>
+        <div id="quadro-login">
+            <!-- 
+             pondo a imagem
+             src- image
+             alt- alternative text (acessibility)
+             srcset- configurações diferentes (removido)
+             -->
+            <img src="img-login.png" alt="imagem de login">
+
+            <!-- criando campo pro email (id deve ser unico) -->
+            <div class="form-input">
+                <label for="email">informe seu email:</label>
+                <input type="text" name="email" id="email" placeholder="exemplo@email.com">
+            </div>
+
+            <!-- criando campo pra senha -->
+            <div class="form-input">
+                <label for="senha">informe sua senha:</label>
+                <input type="text" name="senha" id="senha" placeholder="S3nh@Ex3mpl0">
+            </div>
+
+            <!-- conjunto esqueceu a senha -->
+            <div id="quadro-links">
+                <div>
+                    <label for="manter_logado">manter-se logado?</label>
+                    <input type="checkbox" name="msnter_logado" id="manter_logado">
+                </div>
+                <div>
+                    <a href="#">esqueceu a senha</a>
+                </div>
+            </div>
+
+            <!-- botões-->
+             <div id="quadro-botoes">
+                <button class="btn-login">login</button>
+             </div>
+
+
+        </div>
+</body>
+
+</html>
