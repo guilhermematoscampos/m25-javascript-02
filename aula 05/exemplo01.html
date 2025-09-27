@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">    <!-- lingua -->
+<html lang="pt-br"> <!-- lingua -->
+
 <head>
-    <meta charset="UTF-8">    <!-- padrão de acentuação -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- escala -->
+    <meta charset="UTF-8"> <!-- padrão de acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- escala -->
+    <style>
+        nav {
+            background-color: aquamarine;
+        }
+
+        #video video {
+            width: 300px;
+        }
+        /* aplicando pr classe */
+        .cor-vermelha {
+            color: brown;
+        }
+    </style> <!--estilo em css (nrmalmente separado)-->
     <title>meu primeiro html</title> <!-- titulo do documento -->
 </head>
 
 <body>
     <!-- seção de navegação -->
     <nav id="topo">
-        <a href="#formatacao">formatação</a> | <a href="#listas">listas</a> | <a href="#midias">midias</a> | <a href="#tabelas">tabelas</a> | <a href="#formularios">formularios</a>  
+        <a href="#formatacao">formatação</a> | <a href="#listas">listas</a> | <a href="#imagem">midias</a> | <a
+            href="#tabelas">tabelas</a> | <a href="#formularios">formularios</a> | <a href="#iframes">iframes</a>
     </nav>
 
     <!-- seção de formatação -->
-    <section id="formatacao"> 
-        <header> 
+    <section id="formatacao">
+        <header>
             <h1>formatação em html</h1>
-        </header>    
+        </header>
         <h2> titulo </h2>
         <p>
-            Lorem,&nbsp; ipsum dolor sit amet consectetur adipisicing elit. Nostrum provident sapiente veniam enim assumenda earum quibusdam labore modi dolores non fugit distinctio, corporis laboriosam consequatur fugiat quisquam laudantium. Numquam, odit!
+            Lorem,&nbsp; ipsum dolor sit amet consectetur adipisicing elit. Nostrum provident sapiente veniam enim
+            assumenda earum quibusdam labore modi dolores non fugit distinctio, corporis laboriosam consequatur fugiat
+            quisquam laudantium. Numquam, odit!
         </p>
         <p>
             enchendo lingüiça
@@ -28,7 +45,7 @@
             <b>enchendo lingüiça em negrito</b>
         </p>
         <p>
-             <strong>enchendo lingüiça em negrito de um jeito diferente</strong>
+            <strong>enchendo lingüiça em negrito de um jeito diferente</strong>
         </p>
         <p>
             <i>enchendo lingüiça em italico</i>
@@ -49,7 +66,7 @@
             <mark>enchendo lingüiça marcada</mark>
         </p>
     </section>
-    
+
     <!-- seção de listas -->
     <section id="listas">
         <header>
@@ -66,7 +83,7 @@
                 <li>salsicha 2</li>
             </ol>
             <!-- lista ordenada com valor inicial especifico -->
-             <ol start= "5" type="I">
+            <ol start="5" type="I">
                 <li>salsicha 1</li>
                 <li>salsicha 2</li>
             </ol>
@@ -87,34 +104,42 @@
     </section>
 
     <!-- seção de mídia -->
-    <section id="midias">
+    <section id="imagem">
         <header>
-            <h2>midias</h2>
+            <h2 class="cor-vermelha">midias</h2>
         </header>
 
         <section>
             <header>
                 <h4>imagem</h4>
             </header>
-            <figure> 
-                <img src="https://i0.wp.com/agronews.tv.br/wp-content/uploads/2022/03/Buldogue-filhote.jpg?resize=409%2C421&ssl=1" alt="foto de um bulldogue campeiro">
+            <figure>
+                <img src="https://i0.wp.com/agronews.tv.br/wp-content/uploads/2022/03/Buldogue-filhote.jpg?resize=409%2C421&ssl=1"
+                    alt="foto de um bulldogue campeiro">
                 <figcaption>bulldogue campeiro</figcaption>
             </figure>
-
-            <header>
-                <h4>video</h4>
-            </header>
-            <video controls>
-                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
-            </video>
-
-            <header>
-                <h4>audio</h4>
-            </header>
-            <audio controls>
-                <source src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3" type="audio/mp3">
-            </audio>
         </section>
+    </section>
+
+    <section id="video">
+        <header>
+            <h4>video</h4>
+        </header>
+        <video controls>
+            <source
+                src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/video.mp4">
+        </video>
+    </section>
+
+    <section id="audio">
+        <header>
+            <h4>audio</h4>
+        </header>
+        <audio controls>
+            <source
+                src="https://github.com/richard-brosler-senai/java-tools/raw/refs/heads/master/apoios/Java%20Foundations/Midias/MelhorAmigo.mp3"
+                type="audio/mp3">
+        </audio>
     </section>
 
     <!-- seção de tabelas -->
@@ -123,7 +148,7 @@
             <h2>tabelas</h2>
         </header>
         <table border="1">
-            <thead> 
+            <thead>
                 <tr>
                     <th>sequencia</th>
                     <th>descrição</th>
@@ -143,7 +168,7 @@
                     <td>10,00</td>
                 </tr>
             </tbody>
-            
+
             <tfoot>
                 <tr>
                     <td colspan="2">total</td>
@@ -160,7 +185,7 @@
             <h2>formularios</h2>
         </header>
 
-        <form action="#" method="post">  <!-- get mostra o que foi preenchido no link, post não-->
+        <form action="#" method="post"> <!-- get mostra o que foi preenchido no link, post não-->
             <label for="nome">nome:</label>
             <input type="text" name="nome" id="nome">
 
@@ -170,5 +195,60 @@
             <input type="submit" value="enviar">
         </form>
     </section>
+
+    <!-- conteudo embutido-->
+    <section id="iframes">
+        <header>
+            <h2>iframes</h2>
+        </header>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2ng681Run8U?si=oFr6-jx9uHqLZU_i"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mPTCq3LiZSE?si=UyfuZf46X-urK-y1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="desenho">
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" fill="red" />
+        </svg>
+    </section>
+
+    <!--extras-->
+    <section id="extras">
+        <progress value="70" max="100"></progress> <!-- mostra progresso -->
+        <meter value="0.6">60%</meter> <!-- mostra medição -->
+        <time datetime="2025-09-20">20 de Setembro de 2025</time> <!-- mostra a data -->
+        <code>
+            //teste comment
+            console.log("Olá");
+        </code> <!-- usado para mostrar um código -->
+        <pre> <!-- mostra texto exatamente do mesmo jeito -->
+            for i in range(5):
+            print(i)
+        </pre>
+    </section>
+
+    <aside>
+        <h3>conteudo a parte</h3>
+    </aside>
+    <footer>
+        linkedin: xxx | facebook: xxx | whatsapp: xxx
+    </footer>
+
+    <!--programação-->
+    <section id="programacao">
+        <script>alert("Olá!");</script>
+        <noscript>Seu navegador não suporta JavaScript.</noscript>
+        <template>
+            <p>Este conteúdo pode ser clonado via JS</p>
+        </template>
+    </section>
+
+
 </body>
+
 </html>

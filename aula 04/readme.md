@@ -1,11 +1,11 @@
+/app/ inkscape - desenhos vetoriais
+
 ctrl + d - seleciona multiplos iguais
 ctrl + ; - cria comentario
 alt + shit + ↓ - cria cópia
 alt + shit + f - organiza
+(no chrome) f12 - abre modo dev
 
-css 
-# -> id
-. -> classe
 
 html
   -formatação
@@ -64,3 +64,27 @@ html
   <form action="link to server" method="metodo">    
     ... (ver codigo)
   </form> - cria formulario (metodo: get- mostra os campos (n usado para dados perigosos). post- esconde os campos (mais usado))
+
+  -semantica
+    <header>Cabeçalho</header>
+    <main>Conteúdo principal</main>
+    <section>Seção</section>
+    <article>Artigo</article>
+    <aside>Lateral</aside>
+    <footer>Rodapé</footer>
+
+  -conteudo embutido
+    <iframe></iframe> - põe video ou página externa (como um "mini navegador")
+    <canvas></canvas> - permite desenhar (requer javascript)
+    <svg width="" height=""> parametros </svg> - desenha usando o html
+
+  -programação (sempre no final, depende do conteudo estático)
+    <script>  </script> - põe javascript
+    <noscript>  </noscript> - mensagem caso o navegador n aceite o script
+    <template>
+      <p>  </p>
+    </template> - conteudo n renderizado no carregamento?
+  
+css 
+  # -> id
+  . -> classe
