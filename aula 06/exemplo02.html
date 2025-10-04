@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplos de uso de css</title>
+    <link rel="stylesheet" href="exemplo02.css">
+</head>
+
+<body>
+    <header>
+        <h1>uso de estilos css</h1>
+        <h2 id="grn" id="big">por tags (usando h2 de exemplo) - cor verde</h2>
+    </header>
+
+    <main>
+        <!-- menu de opções -->
+        <nav>
+            <ul>
+                <li><a href="#introducao">introdução</a></li>
+                <li><a href="desenvolvimento">desenvolvimento</a></li>
+                <li><a href="conclusao">conclusão</a></li>
+            </ul>
+        </nav>
+
+        <section id="uso-tabela">
+            <h3>usando tabelas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>descrição</th>
+                        <th>valor</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>lapis</td>
+                        <td>R$ 2,20</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>lapis hb</td>
+                        <td>R$ 3,50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>lapis 2b</td>
+                        <td>R$ 4,20</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>caneta</td>
+                        <td>R$ 3,20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="parentes">
+            <h3>uso de css - parentes</h3>
+            <p>imediato</p>
+            <p>não imediato</p>
+        </section>
+
+        <section id="uso-formulario">
+            <form action="#uso-formulario" method="get">
+                <fieldset>
+                    <legend>dados do cliente</legend>
+                    <label for="nome">nome do cliente</label>
+                    <input type="text" name="nome" id="nome">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

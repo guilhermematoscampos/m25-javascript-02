@@ -1,0 +1,123 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h2 {
+    color: green;
+}
+nav {
+    display: flex;
+}
+nav ul {
+    list-style-type: none; /*tirando as marcaçoes da lista*/
+    margin: 0; /*mudando posição*/
+    padding: 0; /*mudando posição*/
+}
+nav ul li {
+    float: left; /*colocando na mesma linha*/
+}
+nav ul li a {
+    display: block; /*?*/
+    text-align: center;
+    color: rgb(17, 0, 255); /*mudando a cor*/
+    padding: 14px 16px; /*tamanho do display*/
+    background-color: beige;
+    font-weight: bold; /*negrito*/
+}
+
+/*seltor de pseudoclasse - hover*/
+nav ul li a:hover {
+    background-color: bisque; /*parte fica destacada quando o mouse passa por cima*/
+}
+
+/*seletor por id*/
+#uso-tabela {
+    background-color: azure;
+}
+/*seletor do filho imediato do id*/
+#uso-tabela > h3 {
+    color: blue;
+}
+/*estilizando a tabela*/
+#uso-tabela table thead tr {
+    background-color: black;
+    color: white;
+}
+/*utras pseudoclasses*/
+#uso-tabela table tbody tr:nth-child(odd) { /*linhas impares*/
+    background-color: silver;
+}
+#uso-tabela table tbody tr:nth-child(even) { /*linhas pares*/
+    background-color: white;
+}
+#uso-tabela table tbody tr:hover{
+    background-color: rgb(119, 119, 119);
+}
+
+/* uso da pseudoclasse - focus*/
+#uso-formulario form fieldset input:focus {
+    background-color: blanchedalmond;
+}
+
+/* selecionando multiplos elementos prar aplicar um estilo */
+th, td { /* todos th e td */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ordem importa para n sobrescrever */
+/* selecionando irmãos posteriores */
+h3 ~ p {
+    color: blueviolet;
+}
+
+/* selecionando irmão imediato */
+h3 + p {
+    color: pink;
+}
+/* important força a mudança (n recomendado) */
+/* p { color: chocolate !important; }  */
+
+
+/* trabalhando com classes para criar um submenu*/
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.menu li {
+    display: block;
+    width: 150px;
+    position: relative;
+}
+.menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none; /* remove a marcação de hyperlink */
+    color: #333;
+}
+.submenu {
+    /* display - determina a forma como o cnteudo é mostrado */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: aliceblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2s);
+}
+.submenu li {
+    display: block;
+    width: 150px;
+}
+.tem-submenu:hover .submenu {
+    display: block;
+}
+
+
+/* uso de seletor por atributo */
+p[data-detalhe] {
+    text-decoration: underline #111;
+}
+p[data-detalhe="linha3"] {
+    background-color: cyan ;
+    width: 50px;
+}

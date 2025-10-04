@@ -8,18 +8,34 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
-        /* selecionando apenas um elemente com base em uma tag */
+        /* selecionando apenas um elemente com base em uma tag (qualquer tag pode ser usada) */
         p {
             font-size: medium;
             color: #0AEAF8;
         }
+        /* configurando apenas secao02 */
+        #secao02 > p { /* adicionar o > limita ao primeiro filho (n pega subseção)*/
+            font-family: cursive;
+            color: blueviolet;
+        }
+        /* editando apenas a subseção */
+        /*#secao02 #subsection02 p {
+            color: red;
+        }*/
     </style>
     <title>uso do css</title>
 </head>
+
 <body>
     <main>
         <section id="uso-comun">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione neque eaque voluptatibus repellat quasi dolore amet doloremque nemo? Ullam animi quis quae pariatur non adipisci omnis dolores iusto porro ducimus.</p>
+        </section>
+        <section id="secao02">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste doloremque veniam quis suscipit, atque aliquam alias hic eveniet inventore, ut quam quia deleniti ea repudiandae maiores. Libero tempore deserunt doloribus?</p>
+            <section id="subsection02">
+                <p>teste</p>
+            </section>
         </section>
     </main>
 </body>
