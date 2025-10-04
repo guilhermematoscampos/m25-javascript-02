@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+
+}
