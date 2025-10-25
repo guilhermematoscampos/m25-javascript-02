@@ -15,5 +15,6 @@ const validar_envio = () => {
 const form = document.querySelector("#idform");
 form.addEventListener("submit",function(e){
     console.log("enviado");
-    return validar_envio();
-})
+    if (validar_envio()==false){ e.preventDefault()}
+}
+)
