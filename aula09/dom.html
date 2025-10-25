@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando html com js</title>
+</head>
+
+<body>
+    <header>
+        <h1>manipulando html com js</h1>
+    </header>
+    <section id="idmain">
+        <fieldset>
+            <legend>items da lista de compras</legend>
+            <label for="idtext">item:</label>
+            <input type="text" id="idtext">
+            <button type="button" id="idadd">adicionar</button>
+            <button type="button" id="idremove">remover</button>
+        </fieldset>
+        <fieldset>
+            <legend>items da lista</legend>
+            <ol id="idlist"></ol>
+        </fieldset>
+    </section>
+    <!-- ligando o script e o html -->
+    <script src="dom.js"></script>
+</body>
+
+</html>
