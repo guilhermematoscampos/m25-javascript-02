@@ -1,4 +1,22 @@
 {
   "produtos": [
+    {
+      "id": 1,
+      "descricao": "maçã",
+      "saldo": "2147483647",
+      "preco": "19.99"
+    },
+    {
+      "id": 2,
+      "descricao": "mesa",
+      "saldo": "12",
+      "preco": "249.99"
+    },
+    {
+      "id": 3,
+      "descricao": "",
+      "saldo": "",
+      "preco": ""
+    }
   ]
 }

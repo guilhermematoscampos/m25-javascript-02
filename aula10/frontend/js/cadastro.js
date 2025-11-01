@@ -3,7 +3,7 @@
 */
 const maior_id = () => {
     //buscando dados
-    axios.get('http://localhost:3000/produtos').then((ret)=>{
+    return axios.get('http://localhost:3000/produtos').then((ret)=>{
         return ret.data.reduce((a,b) => (a>b?.id ? a : b?.id),0); //retorna o maior id
     }) //faz chamada e pega um retorno (proesso sincrono)
 }
@@ -16,20 +16,21 @@ const gravar = () => {
     const preco = document.querySelector("#idpreco").value;
 
     // montando o json para gravar
-    const dados = {
-        "id" : (id == "null" ? maior_id()+1 : id),
+    maior_id().then((ret)=>{
+        const dados = {
+        "id" : (id == "null" ? ret+1 : id),
         "descricao" : descricao,
         "saldo" : saldo,
         "preco" : preco
-    }
+        }
 
-    if (id=="null"){
-        axios.post("http://localhost:3000/produtos",dados).then((ret)=>console.log("produto criado"));
-        
-    }
-    else {
-        axios.put("http://localhost:3000/produtos/"+id,dados).then((ret)=>console.log("produto gravado"));
-    }
+        if (id=="null"){
+            axios.post("http://localhost:3000/produtos",dados).then((ret)=>console.log("produto criado"));
+        }
+        else {
+            axios.put("http://localhost:3000/produtos/"+id,dados).then((ret)=>console.log("produto gravado"));
+        }
+    })  
 }
 
 // colocando os eventos no form
