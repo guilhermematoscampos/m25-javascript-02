@@ -17,6 +17,12 @@
       "descricao": "cadira",
       "saldo": "5",
       "preco": "400.01"
+    },
+    {
+      "id": 4,
+      "descricao": "banco",
+      "saldo": "3",
+      "preco": "121.17"
     }
   ]
 }
