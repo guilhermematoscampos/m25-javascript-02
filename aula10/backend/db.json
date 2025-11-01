@@ -14,9 +14,9 @@
     },
     {
       "id": 3,
-      "descricao": "",
-      "saldo": "",
-      "preco": ""
+      "descricao": "cadira",
+      "saldo": "5",
+      "preco": "400.01"
     }
   ]
 }
