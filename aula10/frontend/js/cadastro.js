@@ -11,7 +11,7 @@ const maior_id = () => {
 const gravar = () => {
     //inibir o botão submit e reset contra impacientes
     document.getElementById("btnsubmit").disabled = true   
-    document.getElementById("btnreset").disabled = true   //desnecessário por causa do modal
+    //document.getElementById("btnreset").disabled = true   //desnecessário por causa do modal
     document.getElementById("id_modal").classList.add("show")
 
     // buscando os dados do form
