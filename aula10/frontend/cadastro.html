@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>manutenção de produtos</title>
+    <link rel="stylesheet" href="css/estilo-index.css">
 </head>
 <body>
     <header><h2>manutenção de produtos</h2></header>
@@ -29,10 +30,17 @@
                 <input type="number" name="preco" id="idpreco" step="0.01"> <!-- step faz ficar com casas decimal -->
             </fieldset>
             <!-- botões -->
-             <input type="submit" value="gravar"> &nbsp; &nbsp;
-             <input type="reset" value="limpar">
+             <input type="submit" value="gravar" id="btnsubmit"> &nbsp; &nbsp;
+             <input type="reset" value="limpar" id="btnreset">
         </form>
     </section>
+
+    <!-- criando um modal para mostrar que a pagina esta bloqueada-->
+    <div class="modal" id="id_modal">
+        <div class="modal-msg">
+            <h3>registro gravado. redirecionando para a pagina principal</h3>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/cadastro.js"></script>

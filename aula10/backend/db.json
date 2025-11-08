@@ -1,28 +1,58 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "descricao": "maçã",
-      "saldo": "2147483647",
-      "preco": "19.99"
+      "id": "1",
+      "descricao": "bala de morango",
+      "saldo": 3000,
+      "preco": 0.2
     },
     {
-      "id": 2,
-      "descricao": "mesa",
-      "saldo": "12",
-      "preco": "249.99"
+      "id": "2",
+      "descricao": "bala de menta",
+      "saldo": 8000,
+      "preco": 0.25
     },
     {
-      "id": 3,
-      "descricao": "cadira",
-      "saldo": "5",
-      "preco": "400.01"
+      "id": "3",
+      "descricao": "bala de café",
+      "saldo": 1200,
+      "preco": 0.3
     },
     {
-      "id": 4,
-      "descricao": "banco",
-      "saldo": "3",
-      "preco": "121.17"
+      "id": "4",
+      "descricao": "pirulito",
+      "saldo": 1000,
+      "preco": 1
+    },
+    {
+      "id": "5",
+      "descricao": "paçoca",
+      "saldo": 9000,
+      "preco": 2.5
+    },
+    {
+      "id": "6",
+      "descricao": "pipoca sabor manteiga",
+      "saldo": 1000,
+      "preco": 5.2
+    },
+    {
+      "id": "7",
+      "descricao": "pipoca sabor bacon",
+      "saldo": 900,
+      "preco": 6
+    },
+    {
+      "id": "8",
+      "descricao": "bala 7 belo",
+      "saldo": 900000,
+      "preco": 0.2
+    },
+    {
+      "id": "9",
+      "descricao": "pastilha garoto",
+      "saldo": 500,
+      "preco": 4
     }
   ]
 }
