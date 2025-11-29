@@ -1,11 +1,11 @@
 import logosenai from './assets/logo-senai.png';
 import './styles.css';
 
-export default function Header() {
+export default function Header(/*(ontogglemenu)*/) {
     return (
         <div class="cabecalho">
             <div className='pnl-esquerda'>
-                <span className='icon-hamburger'></span>
+                <span className='icon-hamburger' /*onClick={ontogglemenu}*/></span>
                 <img src={logosenai} alt="logo do senai" />
             </div>
             <div className='pnl-direita'>

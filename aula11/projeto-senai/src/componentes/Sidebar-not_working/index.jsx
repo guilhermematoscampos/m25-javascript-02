@@ -1,39 +1,49 @@
-cria template react com cmd:
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import './styles.css'
 
-npm create vite@latest nome_Projeto -- --template react
+const items = [
+    {
+        title: "dashboard",
+        content: [{title: "home", route: "/"}]
+    },
+    {
+        title: "configurations",
+        content: [{title: "perfil", route: "/perfil"}]
+    },
+    {
+        title: "utilitarios",
+        content: [{title: "relatórios", route: "/relatorios"}]
+    },
+]
 
-
-node_modules -> pasta com os arquivos necessários para a framework funcionar
-public -> arquivo pra app inteira
-src -> pasta onde ficam os programas
- 
-
- npm install
- npm run dev
-
- default function Sidebar (){
+export default function Sidebar ((isopen, closesidebar)){
     const {openindex, setopenindex = useState(NULL)}
     const handletoggleitem = (index) => {
         setopenindex ((prev) => 
             (prev==index ? NULL:index));
     }
     return(       
-            <aside className='sidebar sidebar-open'>
+            <aside className={`'sidebar ${isopen ? sidebar-open}'`}>
                 <nav className='sidebar-nav'>
                 {
                     items.map ((item, index) => {
+                        <div className='accordion-item' key=
                         <button className='accordion-header'> 
 
                             <span>{item, title}</span>
-                            <span>{openindex ===index ? }</span>
+                            <span>{openindex ===index ? NULL}</span>
                         </button>
+                        ></div>
                         {
                             openindex === index && (
                                 <ul className='accordion-content'>
                                     {
                                         item.content.map ((subitem) => (
                                             <li key={subitem.title}>
+                                                <link to={subitem.route} className='accordion-link' onClick={closesidebar}></link> 
                                                 {subitem.title} - {subitem.route}
+                                                <span onClick={closesidebar}>fechar</span>
                                             </li>
                                         ))
                                     }
@@ -47,5 +57,3 @@ src -> pasta onde ficam os programas
     )
 } 
 
-para lidar com rotas
-npm install react-router-dom
