@@ -6,7 +6,7 @@ alt + shit + ↓ - cria cópia
 alt + shit + f - organiza
 (no chrome) f12 - abre modo dev
 
-
+final
 html
   -formatação
   espaço adicionado apenas uma vez a não ser que um caracter especial seja usado
