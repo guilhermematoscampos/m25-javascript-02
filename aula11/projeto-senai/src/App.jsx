@@ -1,10 +1,14 @@
 import './App.css'
+import Header from './componentes/Header'
+import Footer from './componentes/Footer'
 
 function App() {
   return (
-    <>
-    <div className='fundo'></div>
-    </>
+    <div className='contentor'>
+      <Header />
+      <div className='fundo'></div>
+      <Footer />
+    </div>
   )
 }
 

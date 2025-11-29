@@ -7,3 +7,6 @@ node_modules -> pasta com os arquivos necessários para a framework funcionar
 public -> arquivo pra app inteira
 src -> pasta onde ficam os programas
  
+
+ npm install
+ npm run dev
